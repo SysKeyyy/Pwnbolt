@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Important to have this script tag in your document, to make the hook work! -->
+    <script>
+        // Put your attacker code here
+    
+        alert("PWNED!!!")
+
+    
+    </script>
+    <title>Pwnbolt demo</title>
+    <style>
+
+        body {
+            background-color: #090a29;
+            text-align: center;
+        }
+
+        h1 {
+            color: lightgreen;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        h2 {
+            color: lightgreen;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        #shadowBox {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Black w/opacity/see-through */
+            border: 3px solid;
+        }
+
+        .rainbow {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 20px;
+            font-family: monospace;
+            letter-spacing: 5px;
+        }
+        .rainbow_text_animated {
+            background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 6s ease-in-out infinite;
+            background-size: 400% 100%;
+        }
+
+        @keyframes rainbow_animation {
+            0%,100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/PWNBOLT_LOGO.jpg" alt="LOGO" height="375">
+    <h1>Pwnbolt testing arena</h1>
+    <h2>Enjoy your compromised broswer :D <br> More features incl pre installed phishing pages <br> Boring? Try adding a malicous extension, or social engineer the <br> victim to get a shell!</h2>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div id="shadowbox">
+        <p class="rainbow rainbow_text_animated">Made by fellow hacker <a class="rainbow rainbow_text_animated" href="https://www.youtube.com/channel/UCVGN_V1aybO94-k-xuu7VWw">syskey#9698</a></p>
+    </div>
+</body>
+</html>

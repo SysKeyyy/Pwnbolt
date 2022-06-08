@@ -1,0 +1,3 @@
+livereload==2.6.3
+lolpython==2.2.0
+colorama==0.4.4
